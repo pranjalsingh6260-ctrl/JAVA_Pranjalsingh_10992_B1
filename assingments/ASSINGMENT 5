@@ -1,0 +1,116 @@
+5.5 Compare hosting types and recommendation for a blog.
+Ans--
+Comparison
+Shared Hosting: Multiple users share one physical server. It's cheap but offers low performance and less security.
+
+Cloud Hosting: Your site is hosted on a network of virtual servers. It is highly scalable and has high uptime.
+
+Static Hosting: Specifically serves pre-built HTML/CSS files. It is the fastest and most secure for simple sites.
+
+Recommendation for a Personal Blog
+For a personal blog, I recommend Static Hosting (using GitHub Pages or Netlify).
+
+Reasons:
+
+Zero Cost: You don't need to pay for a monthly subscription.
+
+Speed: Static files load much faster than dynamic ones.
+
+Maintenance: There is no server to maintain or database to update, making it perfect for a long-term blog.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+5.4 Deploy a static HTML/CSS website using GitHub Pages.
+Ans--
+Follow these steps to deploy your static site:
+
+Initialize Git: Open your terminal in your project folder and run git init.
+
+Push to GitHub: Create a repository on GitHub, then push your code:
+------------------------------------------------------
+|            Bash                                      |
+|                                                      |
+|           git add .                                  |
+|           git commit -m "Initial commit"             |
+|           git branch -M main                         |
+|           git remote add origin <your-repo-url>      |
+|           git push -u origin main                    |
+|           Enable Pages:                              |
+--------------------------------------------------------
+Navigate to your repo's Settings tab.
+
+Click Pages in the left sidebar.
+
+Under "Branch," select main and click Save.
+
+View Site: Your site will be live at https://<username>.github.io/<repo-name>/.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+5.3 List and describe three free hosting platforms.
+Ans--
+1. GitHub Pages
+
+Description: GitHub Pages allows you to host static websites (HTML, CSS, JavaScript) directly from a GitHub repository. It's widely used for personal portfolios, project demos, and documentation.
+
+Pros:
+
+-Free and reliable.
+-Supports custom domains.
+-Integrated with Git version control.
+
+Limitations:
+
+-Only supports static sites (no server-side code like PHP).
+-Limited to GitHub’s bandwidth policies.
+
+2. Netlify
+
+Description: Netlify is a cloud platform that provides free hosting for static websites with continuous deployment from Git repositories. It also offers serverless functions for dynamic features.
+
+Pros:
+
+-Easy to deploy with drag-and-drop or Git integration.
+-Built-in SSL, form handling, and serverless functions.
+-Automatic site updates with Git commits.
+
+Limitations:
+
+-Free plan has bandwidth and build limits.
+-More advanced features require a paid plan.
+
+3. Firebase Hosting (by Google)
+
+Description: Firebase Hosting provides fast and secure hosting for web apps, including static and dynamic content. It integrates well with other Firebase services like authentication and database.
+
+Pros:
+
+-Supports both static and dynamic content.
+-Free SSL certificates and global CDN.
+-Easy deployment using Firebase CLI.
+
+Limitations:
+
+-Limited free tier usage (bandwidth and storage).
+-Requires learning Firebase CLI for deployment.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5.2 Explain the client-server model with a neat diagram.
+Ans--
+The Client-Server Model is a distributed application structure that partitions tasks between providers of a resource (servers) and service requesters (clients).
+
+->Client: The device/browser (like Chrome or Safari) that sends a request for data.
+->Server: A powerful computer that stores files/databases and sends the requested data back.
+------>Diagram<-------
+[ Client ]  ---------- Request (HTTP) -------->  [ Server ]
+ (Web Browser) <--------- Response (HTML/JS) ------ (Web Host)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5.1 What is the difference between HTTP and HTTPS?
+Ans--
+
+Feature,                   HTTP,                                                      HTTPS
+Full Name,                 Hypertext Transfer Protocol,                               Hypertext Transfer Protocol Secure
+Encryption,                None (Plain Text),                                         SSL/TLS Encryption
+Port,                        80,                                                          443
+Data Integrity,            Vulnerable to tampering,                                   Prevents data modification
